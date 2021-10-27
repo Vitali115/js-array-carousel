@@ -1,0 +1,66 @@
+body{
+    background-color: black !important;
+    color: white;
+}
+
+/* carousel */
+
+/* img principale */
+.mds-row{
+    height: 358px;
+    max-width: 700px;
+  }
+
+  /* img slider */
+
+  .item-right img {
+    height: calc(354px / 5);
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+.selected{
+    border: 2px solid white;
+}
+
+.notselected{
+    opacity: 33%;
+}
+
+.carousel-right{
+    position: relative;
+  }
+
+
+  .carousel-item{
+    display: none;
+    object-fit: cover;
+  }
+  
+  .item.active{
+    display: block !important;
+    object-fit: cover;
+  }
+  
+  /* arrows */
+  .prev, .next{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.767);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .prev{
+    top: 5px;
+  }
+  
+  .next{
+    bottom: 5px;
+  }
+ 
